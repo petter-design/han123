@@ -6,29 +6,20 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "port2.axiomed.ir",
+      "server": "www.speedtest.net",
       "server_port": 443,
-      "uuid": "73b03366-975a-4ca7-a41c-0f7e1b5d944a",
+      "uuid": "3423809a-08e5-4b93-bd76-c6cdcbfd9b52",
       "tls": {
         "enabled": true,
-        "server_name": "l75yY2sJQN5Fn0Gx.fORNeWIran-1013.worKERS.DeV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/olqQqiJtpH7kVUcHl0PXN",
+        "path": "/vl/qAuPpP8UsUmtA5NiXmiGs",
         "headers": {
-          "Host": "l75yy2sjqn5fn0gx.fornewiran-1013.workers.dev"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+          "Host": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev"
+        }
       }
     },
     {
