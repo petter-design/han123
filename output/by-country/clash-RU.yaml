@@ -5,43 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 162.159.0.169
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 176.32.39.52
-  port: 20999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 45.131.212.231
-  port: 443
-  udp: true
-  type: vless
-  uuid: 19513b1b-d29a-4f3e-ba9a-888261e4e048
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 194.38.11.86
-  port: 65443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 45.128.78.84
   port: 443
   udp: true
@@ -53,18 +16,41 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: sellflow.org
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 104.21.29.250
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 45.9.118.101
   port: 443
   udp: true
-  type: trojan
-  password: LcICDcp!jD9TFV$NbH
-  sni: dl2uF-iVdeZILZ3E86rK18.Hhvt37tjm2XBOsQL5HXogN-Y.woRKERS.dEv
+  type: vless
+  uuid: 44730b65-24d5-45f2-8b45-8be24015d1b9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: ade.axiomed.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
+  tls: true
+  servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tr/pg4wM48V9O859nmqsJg22EOFKN4S570y?ed=2560
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+    path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
+    headers:
+      Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 194.38.11.86
+  port: 65443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 103.88.243.142
   port: 11592
   udp: true
@@ -72,7 +58,7 @@ proxies:
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 81.177.215.175
   port: 443
   udp: true
@@ -84,20 +70,40 @@ proxies:
     public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
     short-id: 9e4eced6e98ed4d4
   servername: github.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  server: 109.120.181.153
-  port: 443
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  server: 5.42.99.64
+  port: 8443
   udp: true
   type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: eh.vk.ru
-  client-fingerprint: firefox
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  server: 5.42.99.64
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
