@@ -5,7 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.84.167
+  server: cctvhikvision.center
+  port: 2052
+  udp: true
+  type: vless
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: freesocks.work
   port: 2053
   udp: true
   type: vless
@@ -13,21 +24,9 @@ proxies:
   tls: true
   servername: uwu.blueknightnet.qzz.io
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: undef.network
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
 proxy-groups:
