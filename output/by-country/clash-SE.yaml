@@ -5,14 +5,74 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 70.34.207.14
+  server: 138.199.55.243
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 138.199.55.230
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 138.124.86.230
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: sajed.kdns.fr
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  type: vless
+  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
+  network: ws
+  ws-opts:
+    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
+    headers:
+      Host: sajed.kdns.fr
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: subgift.gcorecdn.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 63242a2a-7bdb-4775-bc3f-65c2f260f224
+  tls: true
+  servername: subgift.gcorecdn.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -23,37 +83,19 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 192.142.23.46
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
-  sni: diffoscope.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: static.fatcutecat.net
+- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+  server: 2.26.93.106
   port: 443
   udp: true
   type: vless
-  uuid: b95eb0b3-a8dc-41ce-8bc0-888f81731e7c
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   tls: true
-  servername: static.fatcutecat.net
+  servername: depotchannel.lucheeebezlimitnoekino.stream
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 83.166.237.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: 902e7be9-d0a8-42a6-994f-8320916a9d9e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oKG1EhkfIvBM6xLEk7ck51ZbjvUKDR22RNjTJR_7sTU
-    short-id: 46da9a2868751b85
-  servername: pine.gaznw.my
-  client-fingerprint: qq
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /media/ws/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +106,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +119,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 rules:
 - MATCH,PROXIES
