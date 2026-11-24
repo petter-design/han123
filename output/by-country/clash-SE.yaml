@@ -24,7 +24,7 @@ proxies:
   servername: ns-api-gw.galioncc.com
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 62.93.166.184
+  server: 138.199.55.230
   port: 1270
   udp: true
   type: vmess
@@ -35,7 +35,7 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 138.199.55.230
+  server: 62.93.166.184
   port: 1270
   udp: true
   type: vmess
@@ -59,17 +59,6 @@ proxies:
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 188.225.46.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: a077dc9a-712f-48ea-b75c-d94af64011ec
-  flow: xtls-rprx-vision
-  tls: true
-  servername: spb.b2ai.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   server: sajed.kdns.fr
   port: 443
   udp: true
@@ -80,7 +69,7 @@ proxies:
     path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
     headers:
       Host: sajed.kdns.fr
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -103,7 +92,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,6 +104,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
 rules:
 - MATCH,PROXIES
