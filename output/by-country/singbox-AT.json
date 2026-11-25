@@ -25,34 +25,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-      "server": "144.31.131.73",
-      "server_port": 443,
-      "uuid": "534a0469-a507-4fec-b9a1-f648864e5da0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "aura2.fastlaplegends.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QQgfv5J_fvr_v7GrfflVOb9ZRvBf66qfRzGWS8EKxQw",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
       ]
     },
     {
@@ -60,8 +38,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
